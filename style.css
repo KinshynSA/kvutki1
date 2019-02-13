@@ -951,6 +951,9 @@ body{
 
 
 .ticket-calendar-block{
+	width: 1014px;
+	max-width: 1014px;
+	margin: 24px auto;
 	display: flex;
 	flex-wrap: wrap;
 	color: #888888;
@@ -964,14 +967,20 @@ body{
 }
 .ticket-calendar-block_title_item{
 	width: calc(100% / 7);
+	padding: 4px 8px;
 	background-color: #33ccff;
 	color: #ffffff;
 	font-size: 14px;
 	font-weight: 600;
+	line-height: 1;
 	border-top: 1px solid #0099cc;
 	border-left: 1px solid #0099cc;
 }
+.ticket-calendar-block_title_item:first-of-type{
+	border-top-left-radius: 20px;	
+}
 .ticket-calendar-block_title_item:last-of-type{
+	border-top-right-radius: 20px;
 	border-right: 1px solid #0099cc;	
 }
 .ticket-calendar-block_title_item{}
@@ -979,17 +988,59 @@ body{
 .ticket-calendar-block_day{
 	width: calc(100% / 7);
 }
+.ticket-calendar-block_day:nth-of-type(7n+1){
+	border-right: 1px solid #caf2ff;
+}
 .ticket-calendar-block_day_head{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 16px;
 	background-color: #33ccff;
 	color: #ffffff;
 	font-size: 14px;
 	font-weight: 600;
+	line-height: 1;
 	text-align: center;
-	border: 1px solid #0099cc;
+	border-top: 1px solid #0099cc;
+	border-left: 1px solid #0099cc;
+	border-bottom: 1px solid #0099cc;
 }
-.ticket-calendar-block_day_punkt{}
-.ticket-calendar-block_day_punkt_name{}
-.ticket-calendar-block_day_punkt_time{}
+.ticket-calendar-block_day:nth-of-type(7n+1) .ticket-calendar-block_day_head{
+	border-right: 1px solid #0099cc;
+}
+.ticket-calendar-block_day_body{
+	width: 100%;
+	min-height: 127px;
+	margin-bottom: -1px;
+	padding: 2px;
+	border-left: 1px solid #caf2ff;
+	border-bottom: 1px solid #caf2ff;
+}
+.ticket-calendar-block_day:nth-of-type(7n+1) .ticket-calendar-block_day_body,
+.ticket-calendar-block_day:last-of-type .ticket-calendar-block_day_body{
+	border-right: 1px solid #caf2ff;
+}
+.ticket-calendar-block_day_punkt{
+	margin-top: 7px;
+	margin-bottom: 7px;
+}
+.ticket-calendar-block_day_punkt_name{
+	display: inline-block;
+	width: calc(100% - 35px);
+	overflow-x: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.ticket-calendar-block_day_punkt_time{
+	position: relative;
+	top: -3px;
+	display: inline-block;
+	margin-left: 6px;
+	color: #33ccff;
+	font-weight: 400;
+}
 
 
 
@@ -1033,6 +1084,34 @@ body{
 	.ticket-error-block_butt{
 		position: static;
 		margin-bottom: 8px;
+	}
+	.ticket-calendar-block_title{
+		display: none;
+	}
+	.ticket-calendar-block_day-empty{
+		display: none;
+	}
+	.ticket-calendar-block_day{
+		width: 50%;
+		font-size: 16px;
+	}
+	.ticket-calendar-block_day_head{
+		height: auto;
+		padding: 3px;
+		font-size: 20px;
+	}
+	.ticket-calendar-block_day_body{
+		height: 100%;
+		padding: 4px;
+	}
+	.ticket-calendar-block_day_punkt_name{
+		width: calc(100% - 50px);
+	}
+	.ticket-calendar-block_day:nth-of-type(7n+1) .ticket-calendar-block_day_body,
+	.ticket-calendar-block_day:last-of-type .ticket-calendar-block_day_body,
+	.ticket-calendar-block_day:nth-of-type(7n+1),
+	.ticket-calendar-block_day:nth-of-type(7n+1) .ticket-calendar-block_day_head{
+		border-right: none;
 	}
 }
 @media screen and (max-width: 700px){
