@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Title</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="main-block">
+		<div class="center-main-block">
+			<div class="ticket-buy-block">
+				<div class="ticket-buy-block_head">
+					<div class="ticket-buy-block_head_image">
+						<img src="img/test1.jpg" alt="" />
+					</div>
+					<div class="ticket-buy-block_head_description">
+						<div class="ticket-buy-block_head_text">
+							<h2 class="ticket-buy-block_head_text_title">Місце для дракона</h2>
+							<p class="ticket-buy-block_head_text_text">Місце для дракона</p>
+							<p class="ticket-buy-block_head_text_date">31 січня 2019, 10:35</p>
+						</div>
+						<div class="ticket-buy-block_head_master">
+							<p class="ticket-buy-block_head_master_title">Організатор</p>
+							<div class="ticket-buy-block_head_master_links">
+								<a href="#" target="_blank" rel="noopener">
+									<img src="img/icon/fb.png" alt="facebook" />
+								</a>
+								<a href="#" target="_blank" rel="noopener">
+									<img src="img/icon/in.png" alt="instagram" />
+								</a>
+								<a href="#" target="_blank" rel="noopener">
+									<img src="img/icon/tg.png" alt="telegran" />
+								</a>
+							</div>
+							<p class="ticket-buy-block_head_master_name">Микола Аркас, +38(ХХХ)-ХХХ-ХХ-ХХ</p>
+						</div>
+						<div class="ticket-buy-block_head_price">1000 - 3500 грн</div>
+					</div>
+				</div>
+				<div class="ticket-buy-block_body">
+					<p class="ticket-buy-block_body_title">Про захід:</p>
+					<p class="ticket-buy-block_body_description">Текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст</p>
+					<form class="ticket-buy-block_form">
+						<p class="ticket-buy-block_form_title">Дані замовника:</p>
+						<input class="ticket-buy-block_form_input" placeholder="Прізвище Ім'я по батькові">
+						<input class="ticket-buy-block_form_input" placeholder="Телефон">
+						<input class="ticket-buy-block_form_input" placeholder="Email">
+						<div class="ticket-buy-block_form_checkbox">Згоден із правилами обслуговування</div>
+					</form>
+				</div>
+				<div class="ticket-buy-block_bottom">
+					<div class="ticket-buy-block_bottom_butt ticket-buy-block_bottom_butt_no">Назад до білетів</div>
+					<div class="ticket-buy-block_bottom_butt ticket-buy-block_bottom_butt_ok">Сплатити замовлення: 1000 грн</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/javascript">
+	$('.ticket-buy-block_form_checkbox').click(function(){
+		$(this).toggleClass('active');
+	});
+</script>
+</body>
+</html>

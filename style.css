@@ -17,7 +17,7 @@ body{
 	z-index: 100;
 	width: 100%;
 	height: 100%;
-	background-image: url(img/k1.jpg);
+	background-image: url(img/k5.jpg);
 	background-position: top center;
 	background-repeat: no-repeat;
 	opacity: 0.5;
@@ -85,19 +85,22 @@ body{
 	border-top-color: #33ccff;
 }
 .tickets-search-block_submit{
+	min-height: 42px;
+    padding: 9px 19px;
 	background-color: #00cc00;
 	color: #ffffff;
 	font-weight: 600;
+    line-height: 1;
 	text-align: center;
 	text-transform: uppercase;
-	cursor: pointer;
-	transition: all 0.2s ease-in-out;
-    line-height: 1;
-    border: 2px solid #d0d0d0;
     border-radius: 24px;
-	min-height: 42px;
-    padding: 9px 19px;
+    border: 2px solid #d0d0d0;
     box-sizing: border-box;
+	cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+.tickets-search-block_submit:hover{
+	background-color: #00aa00;
 }
 .tickets-search-block_submit:after{
 	display: none;
@@ -483,7 +486,510 @@ body{
 }
 
 
+.search-ticket-block{
+	max-width: 250px;
+	margin: auto;
+}
+.search-ticket-block_submit{
+    padding: 8px 4px;
+    margin-bottom: 8px;
+	background-color: #00cc00;
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: 600;
+    line-height: 1;
+	text-align: center;
+	text-transform: uppercase;
+    border-radius: 24px;
+    border: 2px solid #669966;
+    box-sizing: border-box;
+    box-shadow: 3px 3px 1px rgba(0,0,0,0.1);
+	cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+.search-ticket-block_submit:hover{
+	background-color: #00aa00;
+}
+.search-ticket-block_input{
+	position: relative;
+}
+.search-ticket-block_input:after{
+	content: "31";
+    position: absolute;
+    top: 25%;
+    right: 10px;
+    width: 28px;
+    height: 21px;
+    z-index: 100;
+    background-image: url(img/date.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 1.8;
+    text-align: center;
+    border: none;
+}
+.search-ticket-block_input input{
+    width: 100%;
+    padding: 10px 40px 10px 8px;
+    background-color: #ffffff;
+    font-size: 14px;
+    line-height: 1;
+    border: 2px solid #d0d0d0;
+    border-radius: 2px;
+}
 
+
+
+.ticket-buy-block{
+	width: 100%;
+	max-width: 950px;
+	margin: 24px auto;
+	padding: 22px 22px 12px;
+	border-radius: 24px;
+	border: 2px solid #3eb5f1;
+}
+.ticket-buy-block_head{
+	display: flex;
+    width: 100%;
+    padding: 6px;
+    margin-bottom: 10px;
+    background-color: #33ccff;
+    color: #ffffff;
+    border-radius: 22px;
+    border: 2px solid #0099cc;
+    box-shadow: 4px 4px 1px rgba(0,0,0,0.2);
+}
+.ticket-buy-block_head_image{
+	width: 420px;
+    height: 240px;
+    min-width: 420px;
+    margin-right: 10px;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 3px 3px 1px rgba(255,255,255,0.3);
+}
+.ticket-buy-block_head_image img{
+	display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    object-position: center;
+    object-fit: cover;
+}
+.ticket-buy-block_head_description{
+	position: relative;
+	width: 100%;
+	padding-bottom: 50px;
+}
+.ticket-buy-block_head_text{
+	width: 100%;
+    padding: 0;
+    font-weight: 600;
+}
+.ticket-buy-block_head_text_title{
+	margin: 0 0 3px;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1;
+    text-decoration: underline;
+}
+.ticket-buy-block_head_text_text{}
+.ticket-buy-block_head_text_date{}
+.ticket-buy-block_head_text_name{}
+.ticket-buy-block_head_text_name strong{}
+.ticket-buy-block_head_text_name span{}
+.ticket-buy-block_head_master{
+	margin: 20px 0 10px;
+    padding: 2px 16px;
+	background-color: #d0efff;
+	color: #888888;
+	font-size: 20px;
+    border-radius: 9px;
+}
+.ticket-buy-block_head_master_title{
+	display: inline-block;
+	font-weight: bold;
+}
+.ticket-buy-block_head_master_links{
+	position: relative;
+	top: 4px;
+	display: inline-flex;
+	margin-left: 5px;
+}
+.ticket-buy-block_head_master_links a{
+	display: inline-block;
+	height: 24px;
+	margin-left: 4px;
+	text-decoration: none;
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+}
+.ticket-buy-block_head_master_links a:hover{
+	text-decoration: none;
+	transform: scale(1.2);
+}
+.ticket-buy-block_head_master_links a img{
+	height: 100%;
+}
+.ticket-buy-block_head_master_name{}
+.ticket-buy-block_head_price{
+	position: absolute;
+    right: 0;
+    bottom: 8px;
+    z-index: 10;
+	display: inline-block;
+    padding: 3px 12px;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 34px;
+    float: right;
+}
+.ticket-buy-block_body{
+	color: #888888;
+	font-size: 14px;
+	line-height: 1.3;
+}
+.ticket-buy-block_body_title{
+	color: #33ccff;
+	font-size: 22px;
+	font-weight: 700;
+}
+.ticket-buy-block_body_description{}
+.ticket-buy-block_form{
+	width: 100%;
+	max-width: 470px;
+	margin: 5px auto 70px;
+	color: #000000;
+	font-size: 16px;
+	text-align: center;
+}
+.ticket-buy-block_form_title{
+	color: #33ccff;
+	font-size: 22px;
+	font-weight: 700;
+}
+.ticket-buy-block_form_input{
+    width: 100%;
+    margin: 7px auto 0px;
+    padding: 8px;
+	font-size: 20px;
+    text-align: center;
+    outline: none;
+    border-radius: 22px;
+    border: 2px solid #d0d0d0;
+}
+.ticket-buy-block_form_checkbox{
+	margin-top: 10px;
+}
+.ticket-buy-block_form_checkbox:before{
+	content: "";
+	position: relative;
+	top: 5px;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	margin-right: 10px;
+	border-radius: 4px;
+	border: 2px solid #669966;
+	/*background-image: url(img/icon/check.png);*/
+	background-color: #ffffff;
+	background-position: center;
+	background-repeat: no-repeat;
+	transition: all 0.2s ease-in-out;
+	cursor: pointer;
+}
+.ticket-buy-block_form_checkbox.active:before{
+	background-image: url(img/icon/check.png);
+	background-color: transparent;
+}
+.ticket-buy-block_bottom{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-top: 20px;
+}
+.ticket-buy-block_bottom_butt{
+	display: inline-block;
+    text-align: center;
+    background-color: #d0efff;
+    min-width: 196px;
+    padding: 7px 23px;
+    color: #888888;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 20px;
+    border: 2px solid #0099cc;
+    box-shadow: 3px 3px 1px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.ticket-buy-block_bottom_butt_no{}
+.ticket-buy-block_bottom_butt_no:hover{
+    background-color: #7ec4e8;
+    color: #ffffff;
+}
+.ticket-buy-block_bottom_butt_ok{
+	background-color: #00cc00;
+	color: #ffffff;
+	border: 2px solid #669966;
+}
+.ticket-buy-block_bottom_butt_ok:hover{
+	background-color: #00aa00;
+}
+
+
+.ticket-buy-block-next{
+	padding: 16px 22px 12px;
+}
+.ticket-buy-block-next_butt{
+	margin: 0 0 15px 8px;
+}
+.ticket-buy-block-next_butt_item{
+	display: inline-block;
+    text-align: center;
+	background-color: #00cc00;
+    min-width: 196px;
+    padding: 7px 19px;
+	color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 20px;
+	border: 2px solid #669966;
+    box-shadow: 3px 3px 1px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.ticket-buy-block-next_butt_item:hover{
+	background-color: #00aa00;
+}
+.ticket-buy-block-next .ticket-buy-block_head_description{
+	padding-bottom: 0;
+}
+.ticket-buy-block-next .ticket-buy-block_head_price{
+	position: static;
+	margin-top: -20px;
+}
+.ticket-buy-block_head_text_name{
+	margin-top: 20px;
+    width: 100%;
+	display: flex;
+    justify-content: space-between;
+}
+.ticket-buy-block-next_body{
+	color: #929292;
+	font-size: 16px;
+	line-height: 1.3;
+}
+.ticket-buy-block-next_body p{}
+.ticket-buy-block-next_body a{
+	font-weight: 600;
+	color: #33ccff;
+	text-decoration: none;
+}
+.ticket-buy-block-next_body a:hover{
+	text-decoration: underline;
+}
+.ticket-buy-block-next_table{
+	display: flex;
+	margin-top: 28px;
+    margin-bottom: 10px;
+    background-color: #33ccff;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1;
+    border-radius: 10px;
+    border: 2px solid #0099cc;
+    box-shadow: 4px 4px 1px rgba(0,0,0,0.2);
+}
+.ticket-buy-block-next_table_column{
+	border-left: 1px solid #0099cc;
+}
+.ticket-buy-block-next_table_row{}
+.ticket-buy-block-next_table_row-title{
+	min-height: 36px;
+	padding: 9px 7px;
+	font-size: 18px;
+	font-weight: bold;
+}
+.ticket-buy-block-next_table_row-item{
+	min-height: 31px;
+	padding: 7px 7px;
+	border-top: 1px solid #0099cc;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.ticket-buy-block-next_table_column:nth-of-type(1){
+	border-left: none;
+}
+.ticket-buy-block-next_table_column:nth-of-type(1) .ticket-buy-block-next_table_row-title,
+.ticket-buy-block-next_table_column:nth-of-type(1) .ticket-buy-block-next_table_row-item{
+	padding-left: 14px;
+}
+.ticket-buy-block-next_table_column-number{
+	min-width: 190px;
+}
+.ticket-buy-block-next_table_column-type{
+	min-width: 170px;
+}
+.ticket-buy-block-next_table_column-name{
+	width: 100%;
+	max-width: 280px;
+}
+.ticket-buy-block-next_table_column-price{
+	min-width: 140px;
+}
+.ticket-buy-block-next_table_column-price .ticket-buy-block-next_table_row-item{
+	color: #000000;
+}
+.ticket-buy-block-next_table_column-download{
+	min-width: 120px;
+	width: 120px;
+	font-size: 12px;
+	text-align: center;
+}
+.ticket-buy-block-next_table_column-download .ticket-buy-block-next_table_row-item{
+	padding: 2px 5px 2px 2px;
+	white-space: inherit;
+}
+.ticket-buy-block-next_table_column-download a{
+	display: flex;
+	color: #ffffff;
+	text-decoration: none;
+}
+.ticket-buy-block-next_table_column-download a:hover{
+	text-decoration: none;
+}
+.ticket-buy-block-next_table_column-download a:after{
+	content: "";
+	display: inline-block;
+	width: 21px;
+	height: 21px;
+	background-image: url(img/icon/download.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.ticket-buy-block-next_table_column-download a:hover:after{}
+
+
+
+
+
+.ticket-error-block{
+	position: relative;
+	width: 100%;
+    max-width: 950px;
+    margin: 24px auto;
+    padding: 6px;
+    color: #888888;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 24px;
+    border: 2px solid #3eb5f1;
+}
+.ticket-error-block_butt{
+	position: absolute;
+	top: 6px;
+	left: 6px;
+	z-index: 10;
+	display: inline-flex;
+    align-items: center;
+    background-color: #00cc00;
+    padding: 7px 9px 7px 7px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 20px;
+    border: 2px solid #669966;
+    box-shadow: 3px 3px 1px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.ticket-error-block_butt:hover{
+	background-color: #00aa00;
+    text-decoration: none;
+}
+.ticket-error-block_butt:before{
+	content: "";
+	display: inline-block;
+	margin-right: 7px;
+	width: 27px;
+	height: 27px;
+	background-image: url(img/icon/left.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.ticket-error-block_title{
+	margin-bottom: 8px;
+	color: #1c95ee;
+    font-size: 24px;
+    font-weight: bold;
+	text-align: center;
+	line-height: 1;
+}
+.ticket-error-block_img{
+	margin-bottom: 5px;
+}
+.ticket-error-block_text{
+	margin-bottom: 6px;
+}
+
+
+
+
+
+
+.ticket-calendar-block{
+	display: flex;
+	flex-wrap: wrap;
+	color: #888888;
+	font-size: 11px;
+	font-weight: 600;
+}
+.ticket-calendar-block_title{
+	display: flex;
+	width: 100%;
+	text-align: center;
+}
+.ticket-calendar-block_title_item{
+	width: calc(100% / 7);
+	background-color: #33ccff;
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: 600;
+	border-top: 1px solid #0099cc;
+	border-left: 1px solid #0099cc;
+}
+.ticket-calendar-block_title_item:last-of-type{
+	border-right: 1px solid #0099cc;	
+}
+.ticket-calendar-block_title_item{}
+.ticket-calendar-block_day-empty{}
+.ticket-calendar-block_day{
+	width: calc(100% / 7);
+}
+.ticket-calendar-block_day_head{
+	background-color: #33ccff;
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: 600;
+	text-align: center;
+	border: 1px solid #0099cc;
+}
+.ticket-calendar-block_day_punkt{}
+.ticket-calendar-block_day_punkt_name{}
+.ticket-calendar-block_day_punkt_time{}
 
 
 
@@ -497,6 +1003,36 @@ body{
 	.tickets-search-block{
 		width: 32%;
 		margin-bottom: 6px;
+	}
+	.ticket-buy-block_head_image{
+		width: 300px;
+		min-width: 300px;
+		height: 100%;
+	}
+	.ticket-buy-block_head_master{
+		font-size: 16px;
+	}
+	.ticket-buy-block_head_master_links a{
+		height: 18px;
+	}
+	.ticket-buy-block-next_table{
+		overflow-x: scroll;
+	}
+	.ticket-buy-block-next .ticket-buy-block_head_price{
+		margin: 8px 0 0;
+		float: none;
+	}
+	.ticket-buy-block_head_text_name{
+		display: block;
+	}
+	.ticket-buy-block_head_text_name strong,
+	.ticket-buy-block_head_text_name span{
+		display: inline-block;
+		width: 100%;
+	}
+	.ticket-error-block_butt{
+		position: static;
+		margin-bottom: 8px;
 	}
 }
 @media screen and (max-width: 700px){
@@ -556,6 +1092,25 @@ body{
 	}
 	.search-block.active{
 		top: 0;
+	}
+	.ticket-buy-block{
+		padding: 8px 8px 12px;
+	}
+	.ticket-buy-block_head{
+		flex-wrap: wrap;
+	}
+	.ticket-buy-block_head_image{
+		width: 100%;
+	    min-width: 0;
+	    margin: 0 0 10px;
+	}
+	.ticket-buy-block_form{
+		margin: 10px auto 30px;
+	}
+	.ticket-buy-block_bottom_butt{
+		width: 100%;
+	    margin-top: 12px;
+	    padding: 7px 12px;
 	}
 }
 @media screen and (max-width: 400px){
